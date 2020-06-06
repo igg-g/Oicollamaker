@@ -1,6 +1,9 @@
+@charset "UTF-8";
+
 body {
   margin: 0;
   padding: 0;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 h1 {
@@ -32,4 +35,14 @@ footer {
 .wrapper {
   width: 1000px;
   margin: 0 auto;
+}
+
+.editor {
+  width: 300px;
+  background: #ddd;
+}
+
+.about {
+  width: 300px;
+  background: #ddd;
 }
