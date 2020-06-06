@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  font-weight: normal;
+  color: #fff;
+}
+
+header {
+  background: #08f;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+canvas {
+  background: #08f;
+}
+
+footer {
+  background: #eee;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
