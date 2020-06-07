@@ -3,35 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>おい牛コラメーカー</title>
+  <title>おいコラメーカー</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header><h1>おい牛コラメーカー</h1></header>
+  <header class="global-header">
+    <h1 class="app-name">おいコラメーカー</h1>
+    <p>
+      <a href="https://www.meijioishiigyunyu.com/">明治おいしい牛乳</a>のコラージュ画像をつくろう！
+    </p>
+  </header>
   
-  <div class="wrapper">
-    <main>
-      <!-- <div class="btn edit-btn">編集する</div> -->
+  <main>
+    <section class="editor">
+      <input placeholder="meiji" type="text" class="input">
+      <input placeholder="新鮮な生乳のおいしさ、そのまま" type="text" class="input">
+      <input placeholder="明治" type="text" class="input">
+      <input placeholder="おいしい牛乳" type="text" class="input">
+      <input placeholder="種類別" type="text" class="input">
+      <input placeholder="牛乳" type="text" class="input">
+      <input placeholder="生乳100%使用" type="text" class="input">
+      <input placeholder="成分無調整" type="text" class="input">
+      <input placeholder="ナチュラル テイスト製法" type="text" class="input">
+      <input placeholder="要冷蔵(10℃以下)" type="text" class="input">
+      <input placeholder="900ml" type="text" class="input">
 
-      <section class="editor">
-        <input placeholder="Enter some text" type="text" id="foo">
+      <button id="generator">画像をつくる</button>
+    </section>
+
+    <section id="pkg">
+      <header class="pkg-header">
+        <p class="output">meiji</p>
+        <div class="arc-border-kit-parent-part">
+        <div class="arc-border-kit-child-part"></div></div>
+      </header>
+
+      <section class="pkg-main">
+        <p class="catch-copy output">新鮮な生乳のおいしさ、そのまま</p>
+        <h1>
+          <span class="company-name output">明治</span>
+          <span class="product-name output">おいしい牛乳</span>
+        </h1>
+        <p class="milk-type">
+          <span class="output">種類別</span>
+          <span class="output">牛乳</span>
+        </p>
       </section>
 
-      <canvas width="300" height="600">
-        Canvas not suppoted.
-      </canvas>
+      <footer class="pkg-footer">
+        <p class="percentage output">生乳100%使用</p>
+        <p class="fat output">成分無調整</p>
+        <p class="natural-taste output">ナチュラル テイスト製法</p>
+        <p>
+          <span class="how-to-keep output">要冷蔵(10℃以下)</span>
+          <span class="volume output">900ml</span>
+        </p>
+      </footer>
+    </section><!-- #pkg -->
 
-      <section class="about">
-        右クリックで保存できるよ！
-      </section>
-    </main>
-  </div>
+    <section class="how-to-use">
+      商品イメージをそこなわないように！
+    </section>
+  </main>
 
-    <footer>
-      <small>copyright</small>
-    </footer>
-
+  <footer class="global-footer">
+    <small>&copy; 2020 igg</small>
+  </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/html2canvas.js"></script>
 </body>
 </html>

@@ -1,48 +1,183 @@
 @charset "UTF-8";
 
-body {
+body, h1, p {
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-}
-
-h1 {
-  margin: 0;
-  font-weight: normal;
-  color: #fff;
-}
-
-header {
-  background: #08f;
 }
 
 main {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 60px;
 }
 
-canvas {
-  background: #08f;
+.global-header {
+  padding: 10px;
+  display: flex;
+  align-items: baseline;
+  box-shadow: 0 1px 3px #aaa;
 }
 
-footer {
+.global-footer {
   background: #eee;
   text-align: center;
   margin-top: 60px;
+  padding: 10px;
 }
 
-.wrapper {
-  width: 1000px;
-  margin: 0 auto;
+.app-name {
+  font-family: "Yu Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+}
+
+.global-header p {
+  margin-left: 20px;
 }
 
 .editor {
   width: 300px;
-  background: #ddd;
+  border: 1px solid #333;
+  padding: 16px;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
-.about {
+.how-to-use {
   width: 300px;
-  background: #ddd;
+  border: 1px solid #333;
+  padding: 16px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* おい牛ゾーン */
+#pkg {
+  --oigyu-blue: #17d;
+  --oigyu-red: #f00;
+  --oigyu-navy: #004;
+  color: var(--oigyu-navy);
+  min-width: 300px;
+  box-shadow: 0px 0px 10px 5px #aaa;
+  font-family: "Yu Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pkg-header {
+  background-color: var(--oigyu-blue);
+  min-height: 100px;
+  position: relative;
+}
+
+.pkg-header p {
+  color: var(--oigyu-red);
+  font-size: 40px;
+  margin: 0 4%;
+}
+
+.arc-border-kit-parent-part {
+  overflow: hidden;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+}
+
+.arc-border-kit-child-part {
+  background-color: #fff;
+  position: absolute;
+  box-sizing: border-box;
+  left: -100%;
+  width: 300%;
+  height: 900px;
+  border: 15px double var(--oigyu-blue);
+  border-radius: 50%;
+}
+
+.pkg-main {
+  position: relative;
+  margin-top: -25px;
+  min-width: 100%;
+  writing-mode: vertical-rl;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.catch-copy {
+  text-align: start;
+  padding-top: 80px;
+  font-size: 22px;
+  letter-spacing: 0.25em;
+  color: var(--oigyu-blue);
+}
+
+/* .pkg-main h1 {
+} */
+
+.company-name {
+  writing-mode: horizontal-tb;
+  font-size: 48px;
+}
+
+.product-name {
+  font-size: 90px;
+  white-space: nowrap;
+}
+
+.milk-type {
+  text-align: end;
+  padding-bottom: 50px;
+}
+
+.milk-type :nth-child(1) {
+  border: 1px solid var(--oigyu-navy);
+  padding: 3px 1px;
+  font-size: 20px;
+}
+
+.milk-type :nth-child(2) {
+  margin-top: 5px;
+  font-size: 28px;
+}
+
+.pkg-footer {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 0 5%;
+}
+
+.percentage {
+  display: inline-block;
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  border-top: var(--oigyu-red) 2px solid;
+  border-bottom: var(--oigyu-red) 2px solid;
+}
+
+.fat {
+  font-size: 20px;
+  letter-spacing: 0.2em;
+}
+
+.natural-taste {
+  font-size: 12px;
+  padding: 2px 12px;
+  display: inline-block;
+  background-color: var(--oigyu-red);
+  border-radius: 10px;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.how-to-keep {
+  font-size: 18px;
+}
+
+.volume {
+  margin-left: 16px;
+  font-size: 24px;
 }
