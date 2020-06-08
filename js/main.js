@@ -1,22 +1,26 @@
 'use strict';
 
 {
-  const inputs = document.getElementsByClassName('input');
-  const outputs = document.getElementsByClassName('output');
+  const outputs = document.querySelectorAll('.output');
   
-  for (let i = 0; i < inputs.length; i++) {
-    inputs[i].addEventListener('input', e => {
-      
-      // e.targetでinput要素を取得
+  for (let i = 0; i < outputs.length; i++) {
+    const form = document.querySelector('form');
+    const input = document.createElement('input');
+
+    input.setAttribute('type', 'text');
+    input.setAttribute('placeholder', outputs[i].textContent);
+    input.addEventListener('input', e => {
       outputs[i].textContent = e.target.value;
     })
+
+    form.appendChild(input);
   }
   
-  function getImage() {
+  function getImg() {
     html2canvas(document.getElementById('pkg')).then(canvas => {
       document.body.appendChild(canvas);
     });
   }
 
-  document.getElementById('generator').addEventListener('click', getImage);
+  document.querySelector('.get-img').addEventListener('click', getImg);
 }

@@ -4,31 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>おいコラメーカー</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="global-header">
-    <h1 class="app-name">おいコラメーカー</h1>
+    <h1 class="app-name">Oicollamaker</h1>
     <p>
-      <a href="https://www.meijioishiigyunyu.com/">明治おいしい牛乳</a>のコラージュ画像をつくろう！
+      <a href="https://www.meijioishiigyunyu.com/" title="明治おいしい牛乳 おいしい暮らし～Natural Taste～ | 株式会社 明治">明治おいしい牛乳</a>のコラージュ画像をつくろう！
     </p>
   </header>
   
   <main>
     <section class="editor">
-      <input placeholder="meiji" type="text" class="input">
-      <input placeholder="新鮮な生乳のおいしさ、そのまま" type="text" class="input">
-      <input placeholder="明治" type="text" class="input">
-      <input placeholder="おいしい牛乳" type="text" class="input">
-      <input placeholder="種類別" type="text" class="input">
-      <input placeholder="牛乳" type="text" class="input">
-      <input placeholder="生乳100%使用" type="text" class="input">
-      <input placeholder="成分無調整" type="text" class="input">
-      <input placeholder="ナチュラル テイスト製法" type="text" class="input">
-      <input placeholder="要冷蔵(10℃以下)" type="text" class="input">
-      <input placeholder="900ml" type="text" class="input">
-
-      <button id="generator">画像をつくる</button>
+      <h1>エディター</h1>
+      <form></form>
+      <button class="get-img">画像をつくる</button>
     </section>
 
     <section id="pkg">
@@ -62,12 +53,32 @@
     </section><!-- #pkg -->
 
     <section class="how-to-use">
-      商品イメージをそこなわないように！
+      <h1>使い方</h1>
+      <section>
+        <p>
+          エディター内のテキストボックスにお好みの文字列を入力してください。<br>
+          対応する文字列を編集することができます。
+        </p>
+        <p>
+          「画像をつくる」のボタンをおすと、このページの下に画像が追加されます。
+          右クリック（スマホなら長押し）で保存できますのでご自由にどうぞ。
+        </p>
+        <p>
+          おねがい：商品イメージをさげるような画像をつくることはおやめください。
+        </p>
+      </section>
     </section>
   </main>
 
   <footer class="global-footer">
-    <small>&copy; 2020 igg</small>
+    <small>
+      &copy; 2020 igg (      
+        <address><ul>
+          <li><a href="https://github.com/igg-g">GitHub</a></li>
+          <li><a href="https://qiita.com/igg">Qiita</a></li>
+        </ul></address>
+      )
+    </small>
   </footer>
 
   <script src="js/main.js"></script>
